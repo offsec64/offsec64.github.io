@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<title>OffSec64</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://raw.githubusercontent.com/offsec64/offsec64.github.io/master/new%20header%20image.PNG");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+
+
+.grad1 {
+  padding: 100px;
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(-90deg, aquamarine, cyan); /* Standard syntax (must be last) */
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+     <div class="w3-col s3">
+      <a href="https://github.com/offsec64?utf8=%E2%9C%93&tab=repositories&q=&type=&language=shell" class="w3-button w3-block w3-black">SHELL SCRIPTS</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="notready.html" class="w3-button w3-block w3-black">PYTHON SCRIPTS</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="grad1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Offensive Security in 64-bit?</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">I do random things</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<center>
+  <div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">LATEST REPOSITORY</span></h5>
+    
+    <p>PC Beeper Music</p>
+    <p>Music that plays on your built in PC Beeper.</p>
+    
+    <a href="https://github.com/offsec64/PC-Beeper-Music" class="w3-button w3-block w3-black">SEE THE REPOSITORY</a>
+    <br> <br>
+    </center>
+
+
+  </div>
+</div>
+
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by W3.CSS and Github pages.</p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
