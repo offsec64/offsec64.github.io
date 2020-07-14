@@ -62,19 +62,39 @@ body, html {
 <center>
   <div class="w3-container" id="about">
   <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">LATEST REPOSITORY</span></h5>
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">OFFSEC64</span></h5>
     
-    <p>PC Beeper Music</p>
-    <p>Music that plays on your built in PC Beeper.</p>
-    
-    <a href="https://github.com/offsec64/PC-Beeper-Music" class="w3-button w3-block w3-black">SEE THE REPOSITORY</a>
+    <p>Hello! I code, edit videos, build websites, do 3D models, and more!</p>
+    <p>Check out my youtube channel:</p>
+    <a href="https://www.youtube.com/channel/UClA9ikUW1Or_FlmTnR_rDJg/videos?view=0&sort=p&flow=grid" class="w3-button w3-block w3-black">SEE MY CHANNEL</a>
     <br> <br>
     </center>
 
 
   </div>
 </div>
+  
+<br>
+<br>
+  
+  <center>
+  <div class="w3-container" id="code">
+  <div class="w3-content" style="max-width:700px">
+  <p> Here's some of my code... this is in shell. </p>
+  
+  <code>
+# Script to show CPU utilization... Displays a bunch of weird stuff when script is ran...
+mpstat > stats.txt
 
+# Line break and header for CPU Temps, then runs the Sensors command and only writes the CPU temps for all cores.
+echo   >> stats.txt
+echo ***CPU TEMPS*** >> stats.txt
+sensors | grep Core | cut -d "(" -f 1 >> stats.txt
+  </code>
+  
+    </div>
+    </div>
+  </center>
 </div>
 
 <!-- Footer -->
